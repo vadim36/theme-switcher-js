@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <!--CEO tags-->
+     <meta name="author" content="Vadim Medvedev">
+     <meta name="descriptions" content="">
+
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+     <title>Document</title>
+     <link rel="preload" href="./styles/main.scss" as="style" onload="this.rel = 'stylesheet'">
+     <script src="./script/_main/index.js" defer></script>
+     <!--<link rel="shortcut icon" href="" type="image/x-icon">-->
+</head>
+
+<body>
+
+     <div class="wrapper">
+          <header class="header">
+               <h1 class="header__logo">LOGO</h1>
+               <nav>
+                    <ul>
+                         <li class="header-nav__link">Home</li>
+                         <li class="header-nav__link">Catalog</li>
+                         <li class="header-nav__link">About us</li>
+                    </ul>
+               </nav>
+               <form name="form_search" class="header__form-search form-search">
+                    <fieldset>
+                         <legend class="form-search__title">Поиск по сайту</legend>
+                         <label for="form_search_input">
+                              Введите поисковый запрос:
+                         </label>
+                         <input type="text" id="form_search_input">
+                         <button type="submit" id="form_search_button_submit">Поиск</button>
+                    </fieldset>
+               </form>
+               <div class="header__menu-burger">
+                    Menu
+               </div>
+          </header>
+          <aside class="aside">
+               <form class="aside__form-toggle_theme form-theme" name="form_theme_toggle">
+                    <fieldset>
+                         <legend class="form-theme__title">Сменить тему:</legend>
+                         <label for="light_theme">Светлая тема:</label>
+                         <input type="radio" class="form-theme__radio-toggle" 
+                              name="toggle_theme_radio" 
+                              id="light_theme"
+                              checked>
+                         <label for="pink_theme">Розовая тема:</label>
+                         <input type="radio" class="form-theme__radio-toggle" 
+                              name="toggle_theme_radio" 
+                              id="pink_theme">
+                         <label for="blue_theme">Синяя тема:</label>
+                         <input type="radio" class="form-theme__radio-toggle" 
+                              name="toggle_theme_radio" 
+                              id="blue_theme">
+                         <label for="green_theme">Зеленая тема:</label>
+                         <input type="radio" class="form-theme__radio-toggle" 
+                              name="toggle_theme_radio" 
+                              id="green_theme">
+                         <label for="dark_theme">Темная тема:</label>
+                         <input type="radio" class="form-theme__radio-toggle" 
+                              name="toggle_theme_radio" 
+                              id="dark_theme">
+                    </fieldset>
+               </form>
+          </aside>
+          <main class="main">
+               <article class="main__section-posts" aria-for="posts">
+                    <div class="main__post post">
+                         <strong class="post__title">Lorem ipsum</strong>
+                         <p class="post__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis ullam recusandae iure. Sapiente assumenda, nam sequi delectus similique illo, sunt cupiditate provident iure, voluptatem perspiciatis tenetur unde doloribus aspernatur possimus fugit quisquam repellat maiores adipisci? Saepe, exercitationem. Aliquam a repellat numquam, vel sapiente dolore perspiciatis similique, accusantium ullam eveniet voluptate? A error, laborum unde iure, nulla molestias perspiciatis consectetur, ipsam et aspernatur officia consequatur nisi expedita molestiae dicta rerum. Libero.</p>
+                    </div>
+                    <div class="main__post post">
+                         <strong class="post__title">Lorem ipsum</strong>
+                         <p class="post__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis ullam recusandae iure. Sapiente assumenda, nam sequi delectus similique illo, sunt cupiditate provident iure, voluptatem perspiciatis tenetur unde doloribus aspernatur possimus fugit quisquam repellat maiores adipisci? Saepe, exercitationem. Aliquam a repellat numquam, vel sapiente dolore perspiciatis similique, accusantium ullam eveniet voluptate? A error, laborum unde iure, nulla molestias perspiciatis consectetur, ipsam et aspernatur officia consequatur nisi expedita molestiae dicta rerum. Libero.</p>
+                    </div>
+                    <div class="main__post post">
+                         <strong class="post__title">Lorem ipsum</strong>
+                         <p class="post__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis ullam recusandae iure. Sapiente assumenda, nam sequi delectus similique illo, sunt cupiditate provident iure, voluptatem perspiciatis tenetur unde doloribus aspernatur possimus fugit quisquam repellat maiores adipisci? Saepe, exercitationem. Aliquam a repellat numquam, vel sapiente dolore perspiciatis similique, accusantium ullam eveniet voluptate? A error, laborum unde iure, nulla molestias perspiciatis consectetur, ipsam et aspernatur officia consequatur nisi expedita molestiae dicta rerum. Libero.</p>
+                    </div>
+                    <div class="main__post post">
+                         <strong class="post__title">Lorem ipsum</strong>
+                         <p class="post__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis ullam recusandae iure. Sapiente assumenda, nam sequi delectus similique illo, sunt cupiditate provident iure, voluptatem perspiciatis tenetur unde doloribus aspernatur possimus fugit quisquam repellat maiores adipisci? Saepe, exercitationem. Aliquam a repellat numquam, vel sapiente dolore perspiciatis similique, accusantium ullam eveniet voluptate? A error, laborum unde iure, nulla molestias perspiciatis consectetur, ipsam et aspernatur officia consequatur nisi expedita molestiae dicta rerum. Libero.</p>
+                    </div>
+                    <div class="main__post post">
+                         <strong class="post__title">Lorem ipsum</strong>
+                         <p class="post__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis ullam recusandae iure. Sapiente assumenda, nam sequi delectus similique illo, sunt cupiditate provident iure, voluptatem perspiciatis tenetur unde doloribus aspernatur possimus fugit quisquam repellat maiores adipisci? Saepe, exercitationem. Aliquam a repellat numquam, vel sapiente dolore perspiciatis similique, accusantium ullam eveniet voluptate? A error, laborum unde iure, nulla molestias perspiciatis consectetur, ipsam et aspernatur officia consequatur nisi expedita molestiae dicta rerum. Libero.</p>
+                    </div>
+                    <div class="main__post post">
+                         <strong class="post__title">Lorem ipsum</strong>
+                         <p class="post__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis ullam recusandae iure. Sapiente assumenda, nam sequi delectus similique illo, sunt cupiditate provident iure, voluptatem perspiciatis tenetur unde doloribus aspernatur possimus fugit quisquam repellat maiores adipisci? Saepe, exercitationem. Aliquam a repellat numquam, vel sapiente dolore perspiciatis similique, accusantium ullam eveniet voluptate? A error, laborum unde iure, nulla molestias perspiciatis consectetur, ipsam et aspernatur officia consequatur nisi expedita molestiae dicta rerum. Libero.</p>
+                    </div>
+               </article>
+               <section class="main__section-gallery" aria-for="gallery">
+                    <div class="main__container-gallery container-gallery">
+                         <figure class="container-gallery__image">
+                              <img src="http://via.placeholder.com/640x360" alt="amazing image">
+                              <figcaption>Amazing random image</figcaption>
+                         </figure>
+                         <figure class="container-gallery__image">
+                              <img src="http://via.placeholder.com/640x360" alt="amazing image">
+                              <figcaption>Amazing random image</figcaption>
+                         </figure>
+                         <figure class="container-gallery__image">
+                              <img src="http://via.placeholder.com/640x360" alt="amazing image">
+                              <figcaption>Amazing random image</figcaption>
+                         </figure>
+                         <figure class="container-gallery__image">
+                              <img src="http://via.placeholder.com/640x360" alt="amazing image">
+                              <figcaption>Amazing random image</figcaption>
+                         </figure>
+                         <figure class="container-gallery__image">
+                              <img src="http://via.placeholder.com/640x360" alt="amazing image">
+                              <figcaption>Amazing random image</figcaption>
+                         </figure>
+                         <figure class="container-gallery__image">
+                              <img src="http://via.placeholder.com/640x360" alt="amazing image">
+                              <figcaption>Amazing random image</figcaption>
+                         </figure>
+                    </div>
+               </section>
+          </main>
+          <footer class="footer"></footer>
+     </div>
+
+</body>
+
+</html>

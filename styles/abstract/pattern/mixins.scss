@@ -1,0 +1,11 @@
+@use '../root' as *;
+
+@mixin form-control($width) {
+  outline: 1px solid hsl(var(--primary-hs) var(--l-60));
+  border-radius: .75rem;
+  min-width: $width;
+  height: 2.5rem;
+  font-size: 1.5rem;
+  background: hsl(var(--primary-hs) var(--l-100));
+  color: hsl(var(--primary-hs) var(--l-25));
+}

@@ -1,0 +1,89 @@
+@use '../abstract' as *;
+@use '../base/hidden.scss' as *;
+
+.header {
+  display: flex;
+  align-items: center;
+  padding: .35rem .5rem;
+  background: hsl(var(--primary-hs) var(--l-85));
+
+  &__logo {
+    flex: .7 1 auto;
+    user-select: none;
+  }
+  
+  nav {
+    flex: 1.5 1 auto;
+  }
+
+  &__form-search {
+    flex: .7 1 auto;
+  }
+
+}
+
+.header nav ul {
+  display: flex;
+
+  .header-nav__link {
+    cursor: pointer;
+    flex: 1 1 auto;
+    transition: transform .35s ease-in-out;
+
+    @media #{$mouseDevice} {
+      &:hover {
+        transform: scale(1.125);
+      }
+    }
+  }
+}
+
+.header nav {
+  @media #{$tabletDevice} {
+    display: none;
+  }
+}
+
+.header__menu-burger {
+  display: none;
+  cursor: pointer;
+  flex: .5 1 auto;
+
+  @media #{$tabletDevice} {
+    display: block;
+  }
+}
+
+.form-search {
+  @media #{$smallTabletDevice} {
+    display: none;
+  }
+
+  fieldset {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  &__title {
+    @extend .visibility-hidden;
+  }
+
+  label[for="form_search_input"] {
+    @extend .visibility-hidden;
+  }
+
+  #form_search_input {
+    @include form-control(10rem);
+    padding: .35rem .56rem;
+  }
+
+  #form_search_button_submit {
+    @include form-control(6rem);
+    position: relative;
+
+    &:active {
+      top: 2px;
+    }
+  }
+}
